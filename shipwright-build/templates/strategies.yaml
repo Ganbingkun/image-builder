@@ -2,6 +2,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-go-1.19.11
+  labels:
+    language: go
 spec:
   volumes:
     - name: platform-env
@@ -74,6 +76,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-go-1.20.6
+  labels:
+    language: go
 spec:
   volumes:
     - name: platform-env
@@ -146,6 +150,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-java-17
+  labels:
+    language: java
 spec:
   volumes:
     - name: platform-env
@@ -218,6 +224,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-java-8
+  labels:
+    language: java
 spec:
   volumes:
     - name: platform-env
@@ -290,6 +298,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-python-3.11.4
+  labels:
+    language: python
 spec:
   volumes:
     - name: platform-env
@@ -362,6 +372,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-python-3.8.17
+  labels:
+    language: python
 spec:
   volumes:
     - name: platform-env
@@ -434,6 +446,8 @@ apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
   name: buildpacks-v3-python-3.7.16
+  labels:
+    language: python
 spec:
   volumes:
     - name: platform-env
@@ -505,7 +519,9 @@ spec:
 apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
-  name: buildpacks-v3-node-18.16.1
+  name: buildpacks-v3-nodejs-18.16.1
+  labels:
+    language: nodejs
 spec:
   volumes:
     - name: platform-env
@@ -577,7 +593,9 @@ spec:
 apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
-  name: buildpacks-v3-node-16.20.1
+  name: buildpacks-v3-nodejs-16.20.1
+  labels:
+    language: nodejs
 spec:
   volumes:
     - name: platform-env
@@ -649,7 +667,9 @@ spec:
 apiVersion: shipwright.io/v1alpha1
 kind: ClusterBuildStrategy
 metadata:
-  name: buildpacks-v3-node-14.21.3
+  name: buildpacks-v3-nodejs-14.21.3
+  labels:
+    language: nodejs
 spec:
   volumes:
     - name: platform-env
@@ -717,4 +737,3 @@ spec:
         requests:
           cpu: 250m
           memory: 65Mi
----

@@ -18,14 +18,14 @@ shipwrightBuildController:
       repository: ghcr.io/shipwright-io/build/waiter
       tag: v0.10.0
     BUILDER_CONTAINER_IMAGE_GO:
-      repository: cuihang97/builder-go
+      repository: kubespheredev/builder-go
       tag: bionic 
     BUILDER_CONTAINER_IMAGE_NODE:
-      repository: cuihang97/builder-node
+      repository: kubespheredev/builder-node
       tag: bionic 
     BUILDER_CONTAINER_IMAGE_PYTHON:
-      repository: cuihang97/builder-python 
+      repository: kubespheredev/builder-python
       tag: bionic 
     BUILDER_CONTAINER_IMAGE_JAVA:
-      repository: cuihang97/builder-java
+      repository: kubespheredev/builder-java
       tag: bionic 
